@@ -28,7 +28,9 @@ $app->redirectIfTrailingSlash();
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('your-machine-name'),
+	'ambMysql' => array('ambMysql'),
+	'ambPostgres' => array('ambPostgres'),
+	'ambSqlite' => array('ambSqlite')
 
 ));
 

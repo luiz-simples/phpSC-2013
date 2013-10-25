@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => '',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -49,40 +49,30 @@ return array(
 		'sqlite' => array(
 			'driver'   => 'sqlite',
 			'database' => __DIR__.'/../database/production.sqlite',
-			'prefix'   => '',
+			'prefix'   => 'sl_',
 		),
 
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'database',
+			'database'  => 'phpSCdb',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => 'mysql',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
-			'prefix'    => '',
+			'prefix'    => 'my_',
 		),
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
+			'database' => 'phpscdb',
+			'username' => 'postgres',
+			'password' => 'postgres',
 			'charset'  => 'utf8',
-			'prefix'   => '',
+			'prefix'   => 'pg_',
 			'schema'   => 'public',
 		),
-
-		'sqlsrv' => array(
-			'driver'   => 'sqlsrv',
-			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
-			'prefix'   => '',
-		),
-
 	),
 
 	/*
